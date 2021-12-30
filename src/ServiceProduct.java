@@ -32,7 +32,7 @@ public class ServiceProduct {
     }
 
     public double interest(float importPrice, float sellingPrice, int totalSell) {
-        return (sellingPrice - importPrice) / 2;
+        return (sellingPrice - importPrice) * totalSell;
     }
 
     public void showProduct(Product[] product) {
